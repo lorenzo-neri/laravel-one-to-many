@@ -60,7 +60,15 @@
                                         class="fa-solid fa-link fa-2xl"></i></a>
                             </td>
 
-                            <td class="align-middle">{{ $project->tech }}</td>
+
+
+                            <td class="align-middle">{{ $project->type ? $project->type->type : 'Senza tipo' }}</td>
+
+                            {{-- <span class="badge bg-primary">
+                            {{$post->category ? $post->category->name : 'Uncategorized' }}
+                            </span> --}}
+
+
 
                             {{-- SHOW --}}
                             <td class="align-middle text-center">
