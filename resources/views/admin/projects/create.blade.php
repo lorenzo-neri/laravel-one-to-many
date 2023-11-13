@@ -116,7 +116,7 @@
 
                             @forelse ($types as $type)
                                 <option value="{{ $type->id }}" {{ $type->id == old('type_id') ? 'selected' : '' }}>
-                                    {{ $type->name }}</option>
+                                    {{ $type->type }}</option>
                             @empty
                             @endforelse
 
