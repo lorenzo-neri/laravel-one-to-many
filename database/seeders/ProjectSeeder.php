@@ -25,7 +25,7 @@ class ProjectSeeder extends Seeder
             $project->thumb = $faker->imageUrl(category: 'Projects');
             // dd($project->thumb);
             $project->description = $faker->realText();
-            $project->tech = $faker->company();
+            /* $project->tech = $faker->company(); */
 
             $project->link_github = $faker->url();
             $project->link_project_online = $faker->url();

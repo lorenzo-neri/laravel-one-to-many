@@ -55,7 +55,7 @@
 
                     </div>
 
-                    <div class="mb-3">
+                    {{-- <div class="mb-3">
 
                         <label for="tech" class="form-label"><strong>Technologies Used</strong></label>
 
@@ -65,7 +65,7 @@
                         @error('tech')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
-                    </div>
+                    </div> --}}
 
                     <div class="mb-3">
 

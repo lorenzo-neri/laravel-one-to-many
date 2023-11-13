@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('types', function (Blueprint $table) {
             $table->id();
 
-            $table->string('title'); //Learn Laravel
-            $table->string('slug'); //https://mysite.com/posts/learn-laravel
-            $table->string('thumb')->nullable();
-            $table->text('description')->nullable();
-            /* $table->string('tech')->nullable(); */
+            $table->string('type', 50);
 
             $table->timestamps();
         });
@@ -29,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('projects');
+        Schema::dropIfExists('types');
     }
 };
