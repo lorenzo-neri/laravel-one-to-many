@@ -109,7 +109,6 @@
                         <label for="type_id" class="form-label">Types</label>
                         <select class="form-select @error('type_id') is-invalid  @enderror" name="type_id" id="type_id">
                             <option selected disabled>Select a type</option>
-                            <option value="">Uncategorized</option>
 
                             @forelse ($types as $type)
                                 <option value="{{ $type->id }}" {{ $type->id == old('type_id') ? 'selected' : '' }}>
