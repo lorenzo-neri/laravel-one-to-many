@@ -60,8 +60,6 @@
                                         class="fa-solid fa-link fa-2xl"></i></a>
                             </td>
 
-
-
                             <td class="align-middle">{{ $project->type ? $project->type->type : 'Senza tipo' }}</td>
 
                             {{-- <span class="badge bg-primary">
